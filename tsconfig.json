@@ -1,0 +1,26 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+      "allowSyntheticDefaultImports" : true,
+      "emitDecoratorMetadata" : true,
+      "experimentalDecorators" : true,
+      "lib" : [ "es2017" ],
+      //"mapRoot": "debug",
+      "module" : "commonjs",
+      "noImplicitAny": false,
+      "noImplicitReturns": true,
+      //"noUnusedLocals": true,
+      //"noUnusedParameters": true,
+      //"outDir" : "debug",
+      "removeComments": true,
+      //"sourceMap" : true,
+      "target" : "es2017"
+    },
+    "include" : [
+      "src/**/*.ts",
+      "test/**/*.ts"
+    ],
+    "exclude" : [
+      "node_modules"
+    ]
+}
