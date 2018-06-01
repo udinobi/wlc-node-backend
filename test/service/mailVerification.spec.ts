@@ -25,7 +25,7 @@ tape(`Testing route(${testId} - unknown contact)`, test => {
     const injector = setup();
 
     const body = {
-        email: "devel@wlc-asean.com",
+        email: "devel@wlc.com",
         message: testId,
         username: env("USER")
     };
@@ -67,7 +67,7 @@ tape(`Testing route(${testId} - known contact)`, test => {
     const injector = setup();
 
     const body = {
-        email: "devel@wlc-asean.com",
+        email: "devel@wlc.com",
         message: testId,
         username: env("USER")
     };

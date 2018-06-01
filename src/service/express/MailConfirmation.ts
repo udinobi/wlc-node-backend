@@ -66,7 +66,7 @@ export class MailConfirmationService implements ExpressService {
                 sendHtml(res, MailConfirmationService.responseTemplate
                     .replace("==message==",
                         alreadyForwarded.replace("==username==", _.username)));
-                return;
+                return;git 
             }
 
             const subject = `Info request from ${_.username} (New Contact)`;
@@ -75,7 +75,7 @@ export class MailConfirmationService implements ExpressService {
                 from : _.email,
                 subject : subject,
                 text : `${subject}\n${"=".repeat(80)}\n\n${_.text}`,
-                to : "info@wlc-asean.com"
+                to : "info@wlc.com"
             };
 
             // Updating the message as verified... even when the email won't be succesfully sent.

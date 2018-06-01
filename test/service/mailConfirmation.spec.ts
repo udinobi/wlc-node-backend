@@ -51,7 +51,7 @@ tape(`Testing route(${testId} - unknown contact, probably removed)`, test => {
 tape(`Testing route(${testId} - known contact, message already forwarded)`, test => {
     const injector = setup();
 
-    const message = new Message(env("USER"), "devel@wlc-asean.com", testId, true);
+    const message = new Message(env("USER"), "devel@wlc.com", testId, true);
     message.id = uuid();
 
     const repository = Mock.ofType<Repository>();
@@ -79,7 +79,7 @@ tape(`Testing route(${testId} - known contact, message already forwarded)`, test
 tape(`Testing route(${testId} - new contact, identity confirmed)`, test => {
     const injector = setup();
 
-    const message = new Message(env("USER"), "devel@wlc-asean.com", testId, false);
+    const message = new Message(env("USER"), "devel@wlc.com", testId, false);
     message.id = uuid();
 
     const repository = Mock.ofType<Repository>();

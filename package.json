@@ -1,13 +1,12 @@
 {
-  "name": "wlc-email-service",
+  "name": "wlc-node-backend",
   "private": true,
   "version": "0.1.1",
   "description": "REST Interface to WLC's email and authorization services",
   "license": "ISC",
-  "homepage": "https://github.com/wlc-asean/wlc-node-backend#readme",
+  "homepage": "https://github.com/udinobi/wlc-node-backend#readme",
   "author": {
-    "name": "Web Learning Center",
-    "email": "devel@wlc-asean.com"
+    "name": "WLC"
   },
   "keywords": [
     "WLC",
@@ -28,10 +27,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wlc-asean/wlc-node-backend.git"
+    "url": "git+https://github.com/udinobi/wlc-node-backend.git"
   },
   "bugs": {
-    "url": "https://github.com/wlc-asean/wlc-node-backend/issues"
+    "url": "https://github.com/udinobi/wlc-node-backend/issues"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.5",

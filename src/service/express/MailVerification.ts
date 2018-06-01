@@ -79,7 +79,7 @@ export class MailVerificationService implements ExpressService {
             from : email,
             subject : subject,
             text : `${subject}\n${"=".repeat(80)}\n\n${text}`,
-            to : "info@wlc-asean.com"
+            to : "info@wlc.com"
         };
 
         // Persist the message... even when the email won't be succesfully sent.
@@ -122,7 +122,7 @@ export class MailVerificationService implements ExpressService {
             this.repo.save<Message>("Message", Message.fromModel(new MessageModel(username, email, text, false)).get())
                 .then(_message => {
                     const _email: HtmlMail = {
-                        from : "info@wlc-asean.com",
+                        from : "info@wlc.com",
                         html : MailVerificationService.verifyTemplate
                             .replace("==email=username==", username)
                             .replace("==email=url=uuid==", _message.id),

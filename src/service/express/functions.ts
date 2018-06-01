@@ -43,10 +43,10 @@ function notify(credential: Credential, outcome: AccessOutcome, clientIPs: strin
         : "";
 
     const mail: TextMail = {
-        from : "devel@wlc-asean.com",
+        from : "devel@wlc.com",
         subject : otc,
         text : `${otc} from IP(${clientIPs}) at(${atd})\n\nCredential(${credential.username}) ${exp}`,
-        to : "info@wlc-asean.com"
+        to : "info@wlc.com"
     };
 
     sendEmail(mail, doNothing, doNothing);
